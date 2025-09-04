@@ -6,6 +6,7 @@ html, body {
 }
 
 .sidebar{
+    position: absolute;
     background-color: blue;
     position:absolute;
     left:0px;
@@ -83,3 +84,47 @@ margin-left: 5rem;
 
     align-items: center;
 }
+.header1{
+    width:100%;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    border: 4px rgb(0, 34, 255) solid;
+    align-items: center;     
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    display: flex;
+    
+}
+.header2{
+    width:3rem;
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+    border: 4px rgb(0, 34, 255) solid;
+    align-items: center;     
+
+    display: flex;
+}
+.header3{
+    margin-left:-4rem;
+width: 400px;
+    display: flex;
+    height: 5rem;
+    border: 4px rgb(217, 255, 0) solid;
+    align-items: center;  
+    align-self: center;   
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    margin:0px;
+}
+.headerChild{
+    margin:30px;
+}
+.headerChild > button{
+
+}
+.header2{}
+.header2Text{width: 8rem;}
