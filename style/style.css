@@ -1,4 +1,9 @@
+@font-face {
+    font-family: Lexend;
+    src: url(./fonts/Lexend.ttf);
+}
 html, body {
+    font-family: Lexend;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -109,7 +114,7 @@ margin-left: 5rem;
 }
 .header3{
     margin-left:-4rem;
-width: 400px;
+width: 600px;
     display: flex;
     height: 5rem;
     border: 4px rgb(217, 255, 0) solid;
@@ -124,7 +129,33 @@ width: 400px;
     margin:30px;
 }
 .headerChild > button{
-
+    margin-left:10px;
+    margin-right:10px;
+font-size:20px;
+border-radius: 10px;
+border-color:transparent;
+background-color: lightblue;
+color:white;
+font-family:Lexend ;
 }
 .header2{}
-.header2Text{width: 8rem;}
+.h2txt1{
+    font-size: 12px;
+}
+.h2txt2{
+    height: 2px;
+}
+.h2txtbox{height: 40px;
+width: 300px
+;}
+.header2Text{
+    width: 12rem;
+    justify-content: center;
+    display: flex;
+}
+.usericon{
+    margin-left:30px;
+    margin-right: 10px;;
+}
+.h2txt2box{width: 30px;
+}
