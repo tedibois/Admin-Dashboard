@@ -30,6 +30,7 @@ html, body {
     width: 80%;
     box-shadow: 0px 5px 10px 0px rgb(107, 107, 107);
     z-index: 2; 
+    overflow: hidden;
 }
 
 .mainContent {
@@ -104,12 +105,12 @@ margin-left: 5rem;
 }
 .header2{
     width:3rem;
-    overflow: hidden;
+ 
     width: 100%;
     height: 5rem;
     border: 4px rgb(0, 34, 255) solid;
     align-items: center;     
-
+justify-content: center;
     display: flex;
 }
 .header3{
@@ -139,23 +140,55 @@ color:white;
 font-family:Lexend ;
 }
 .header2{}
-.h2txt1{
-    font-size: 12px;
+.h2txt1 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
 }
 .h2txt2{
-    height: 2px;
+   
 }
-.h2txtbox{height: 40px;
-width: 300px
+.h2txtbox{
+    flex:3 39px;
+
+    height: 70px;
+width: 500px;
+justify-content: space-between
 ;}
 .header2Text{
     width: 12rem;
     justify-content: center;
-    display: flex;
+flex:1;
 }
 .usericon{
     margin-left:30px;
     margin-right: 10px;;
 }
-.h2txt2box{width: 30px;
+.h2txt2box {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: auto;
+    margin-top: 2px;
+}
+.hibox{
+    margin:20px;
+}
+input[type="text"] {
+    width: 400px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid lightgray;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: row;
+    gap: 8px;
+    width: auto;
+    margin-top: -5px;
+white-space: nowrap;
 }
