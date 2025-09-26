@@ -9,7 +9,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
+.pmo{
+margin-top:10px;
+    display: flex;        
+    flex-wrap: wrap;  
+    flex-direction: row;
+}
 .sidebar{
     position: absolute;
     background-color: rgb(51, 116, 255);
@@ -18,6 +23,47 @@ html, body {
     top:0px;
     height: 100%;
     width: 20%;
+}
+.sidebarHeader{
+
+    height: 100px;
+    align-content: center;
+    display: flex;        
+    flex-wrap: wrap;  
+    flex-direction: row;
+}
+.sidebarHeader > h1 > img{
+    
+    margin-left:0px;
+    margin-top:10px;
+}
+.sidebarHeader > h1{
+    margin-left:-20px;
+margin-top: -0px;
+margin-right:40px;
+}
+.sidebarTop{
+    justify-content: center;
+    justify-content: space-between;
+    margin-left:30px;
+    display: flex;        
+    flex-wrap: wrap;  
+    flex-direction: column;
+    margin-bottom:100px;
+}
+.sidebarTopBox{
+    font-size:25px;
+}
+.sidebarBottom{
+    margin-left:30px;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;        
+    flex-wrap: wrap;  
+    flex-direction: column;
+}
+.sidebarBottomBox{
+    font-size:25px;
 }
 
 .header{
@@ -40,7 +86,6 @@ html, body {
 justify-content: space-between;
     width: 100%;
     height: 3rem;
-    border: 4px red solid;
     align-items: center;     
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,7 +95,7 @@ justify-content: space-between;
 .navbarContainer{
   
 
-
+margin-top: 10px;
     width:100%;
     overflow: hidden;
 
@@ -91,7 +136,6 @@ margin-left: 5rem;
     justify-content: space-between;
     width: 100%;
     height: 5rem;
-    border: 4px rgb(0, 34, 255) solid;
     align-items: center;     
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
@@ -103,7 +147,6 @@ margin-left: 5rem;
  
     width: 100%;
     height: 5rem;
-    border: 4px rgb(0, 34, 255) solid;
     align-items: center;     
 justify-content: center;
     display: flex;
@@ -113,7 +156,6 @@ justify-content: center;
 width: 600px;
     display: flex;
     height: 5rem;
-    border: 4px rgb(217, 255, 0) solid;
     align-items: center;  
     align-self: center;   
     justify-items: center;
@@ -190,7 +232,6 @@ white-space: nowrap;
 .mainContent {
     background-color: rgb(206, 206, 206);
     position: absolute;
-    border:5px solid rgb(29, 250, 0);
     top: 18%;        
     left: 20%;        
     height: 82%;
@@ -205,7 +246,6 @@ white-space: nowrap;
 .content{
     width: 400px;
     height:180px;
-    border: 4px solid rgb(255, 0, 0);
     margin: 5px;
 }
 .leftContent{
@@ -220,7 +260,6 @@ white-space: nowrap;
 .toptextContent{
     width: 100%;
     height: 10%;
-    border: 4px solid rgb(255, 0, 0);
     display: flex;        
     flex-wrap: wrap;  
     flex-direction: column;
@@ -228,48 +267,29 @@ white-space: nowrap;
     justify-content: center;
     align-items: center;
 }
+.ann {margin-left:350px;}
 .rightContent{
-
+    margin-top: 5px;
+margin-left: 120px;
          display: flex;        
     flex-wrap: wrap;  
 align-items: right;
     flex-direction: column;
 }
 .toprightContent{
-margin-left: 100px;
-margin-bottom: 60px;
-    display: flex;        
-    flex-wrap: wrap;  
-    flex-direction: row;
-    gap: 1px;
-    width: 400px;
-        border: 3PX solid grey;
-    border-radius: 10px;
-            background-color: rgb(207, 207, 207);
+margin-bottom: 0px;
 }
 .toprightContentBox{
-        background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 50px;
-
-}
-.bottomrightContent{
-margin-left: 100px;
-    display: flex;        
-    flex-wrap: wrap;  
-    flex-direction: row;
-    gap: 1px;
-    width:400px;
-            border: 3PX solid grey;
-    border-radius: 10px;
-            background-color: rgb(207, 207, 207);
-    
+    width: 300px;
+    height:60px;
+    border: 4px solid rgb(255, 0, 0);
+    margin: 5px;
 }
 .bottomrightContentBox{
-        background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 50px;
-
+    width: 300px;
+    height:60px;
+    border: 4px solid rgb(255, 0, 0);
+    margin: 5px;
 }
 .leftContent > .content{
 
@@ -322,3 +342,77 @@ margin: 30px;
 .h5{
     margin-top:10px;
 }
+.bottomrightContent > .bottomrightContentBox{
+
+border:transparent;
+
+background: #fff;
+box-shadow: 4px 4px 0 rgb(146, 143, 143);
+background-image:
+  linear-gradient(
+    90deg,
+    #fff 12px, 0,
+    rgb(146, 143, 143) 15px, 0,
+    rgb(206, 206, 206) 20px, 0,
+    #fff 100%
+  ),
+  radial-gradient(
+    circle closest-side,
+    rgba(255,255,255,0) 88%,
+    #fff 100%
+  ),
+  radial-gradient(
+    circle at 22px 8px,
+    rgb(206, 206, 206) 40%,
+    rgb(146, 143, 143) 40%,
+    rgb(146, 143, 143) 100%
+  );
+background-size: 32px 8px, 32px 16px, 32px 16px;
+background-repeat: space no-repeat;
+background-position: center top, center 6px, center 6px;
+
+&--alt {
+  background-image: linear-gradient(90deg, #fff 12px, 0, #00486B 15px, 0 ,#1373A9 20px, 0,#fff 100%),radial-gradient(circle closest-side,rgba(255,255,255,0) 88%,#fff 100%),radial-gradient(circle at 22px 8px,#1373A9 40%,#00486B 40%,#00486B 100%);
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 21'%3E%3Cpath d='M20 0h-7v6.9a7.5 7.5 0 107 0V0z' fill='%231373A9'/%3E%3Cpath d='M13 0h3v6.9a7.5 7.5 0 002 14 7.5 7.5 0 01-9-7.4c0-2.9 1.6-5.4 4-6.6V0z' fill='%2300486B'/%3E%3C/svg%3E");
+  background-size: 2em 1.3125em;
+}
+
+
+}
+.toprightContent > .toprightContentBox{
+
+    border:transparent;
+    
+    background: #fff;
+    box-shadow: 4px 4px 0 rgb(146, 143, 143);
+    background-image:
+      linear-gradient(
+        90deg,
+        #fff 12px, 0,
+        rgb(146, 143, 143) 15px, 0,
+        rgb(206, 206, 206) 20px, 0,
+        #fff 100%
+      ),
+      radial-gradient(
+        circle closest-side,
+        rgba(255,255,255,0) 88%,
+        #fff 100%
+      ),
+      radial-gradient(
+        circle at 22px 8px,
+        rgb(206, 206, 206) 40%,
+        rgb(146, 143, 143) 40%,
+        rgb(146, 143, 143) 100%
+      );
+    background-size: 32px 8px, 32px 16px, 32px 16px;
+    background-repeat: space no-repeat;
+    background-position: center top, center 6px, center 6px;
+    
+    &--alt {
+      background-image: linear-gradient(90deg, #fff 12px, 0, #00486B 15px, 0 ,#1373A9 20px, 0,#fff 100%),radial-gradient(circle closest-side,rgba(255,255,255,0) 88%,#fff 100%),radial-gradient(circle at 22px 8px,#1373A9 40%,#00486B 40%,#00486B 100%);
+      background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 21'%3E%3Cpath d='M20 0h-7v6.9a7.5 7.5 0 107 0V0z' fill='%231373A9'/%3E%3Cpath d='M13 0h3v6.9a7.5 7.5 0 002 14 7.5 7.5 0 01-9-7.4c0-2.9 1.6-5.4 4-6.6V0z' fill='%2300486B'/%3E%3C/svg%3E");
+      background-size: 2em 1.3125em;
+    }
+    
+    
+    }
