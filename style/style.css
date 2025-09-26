@@ -12,7 +12,7 @@ html, body {
 
 .sidebar{
     position: absolute;
-    background-color: blue;
+    background-color: rgb(51, 116, 255);
     position:absolute;
     left:0px;
     top:0px;
@@ -22,7 +22,7 @@ html, body {
 
 .header{
         position:absolute;
-        background-color: rgb(2, 206, 206);
+        background-color: rgb(255, 255, 255);
 
     left: 20%;
     top: 0px;
@@ -60,6 +60,9 @@ justify-content: space-between;
   justify-content: center;
   align-items: center;
 margin-left: 5rem;
+}
+.searchbar > input{
+    background-color: #dbdbdb;
 }
 .notificationIcon{
     margin-left:20rem;
@@ -304,4 +307,18 @@ border:transparent;
   }
 
 
+}
+.leftContentBox{
+justify-content: center;
+align-items: center;
+margin: 30px;
+}
+.content{
+    margin-top: -10p;
+}
+.h4{
+
+}
+.h5{
+    margin-top:10px;
 }
